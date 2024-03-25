@@ -1,0 +1,55 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #b3e0ff;
+}
+
+.house {
+  position: relative;
+  width: 300px;
+  height: 200px;
+}
+
+.base {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 320px;
+  height: 120px;
+  background-color: #c2b280;
+}
+
+.roof {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-left: 195px solid transparent;
+  border-right: 195px solid transparent;
+  border-bottom: 100px solid #8b4513;
+  transform: translateX(-50%);
+}
+
+.window {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ffff99; /* Цвет окна */
+  transform: translate(-50%, -50%);
+}
+
+.chimney {
+  top: -10px;
+  left: 20px;
+  width: 40px;
+  height: 60px;
+  background-color: #999999; /* Цвет дымохода */
+}
